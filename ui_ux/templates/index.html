@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DiabetesX</title>
+    {% load static %}
+    <!-- For the Separation -->
+    <link rel="stylesheet" href={% static 'styles/index.css' %} />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ui-outer-border">
+        <div class="ui-inner-alignment">
+          <b class="ui-name">DiabetesX</b>
+          <h4 class="ui-api-label">Diabetes Status ML API<br/></h4>
+            <p class="ui-api-label">AuthKey: No</p>
+            <p class="ui-api-label">Request Method: POST</p>
+            <div class="ui-api-label">
+              URL:
+              {% if end_point %}
+              <button class="ui-api-button ui-copy-btn" data-api={{end_point}}>diabetesx-api</button>
+              {% endif %}
+            </di>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src={% static 'javascript/index.js' %} defer></script>
+</html>

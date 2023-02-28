@@ -1,0 +1,14 @@
+{
+  "material-icon-theme.folders.associations": {
+    "dataset": "Database",
+    "modelapi": "Home",
+    "ui_ux": "Content",
+    "migrations": "Controller"
+  },
+  "material-icon-theme.files.associations": {},
+  "files.exclude": {
+    ".vscode/": true
+  },
+
+  "search.exclude": {}
+}
