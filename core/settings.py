@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
+
+# from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,8 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # used python-config to hide secret_key and debug variable value
-SECRET_KEY = config("SECRET_KEY")
-DEBUG = config("DEBUG", default=False, cast=bool)
+# SECRET_KEY = config("SECRET_KEY")
+# DEBUG = config("DEBUG", default=False, cast=bool)
+SECRET_KEY = "django-insecure-jri%$0e$hckmd_c5kn=a%!s(l(p+64(k^igs_+4xpusnjz@wnc"
+DEBUG = False
+
 
 ALLOWED_HOSTS = [".vercel.app", "localhost"]
 
