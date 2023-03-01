@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-import os
 from pathlib import Path
 
 # from decouple import config
@@ -28,7 +27,7 @@ SECRET_KEY = "django-insecure-jri%$0e$hckmd_c5kn=a%!s(l(p+64(k^igs_+4xpusnjz@wnc
 DEBUG = False
 
 
-ALLOWED_HOSTS = [".vercel.app", ".now.sh", "localhost"]
+ALLOWED_HOSTS = [".vercel.app", "localhost"]
 
 
 # Application definition
@@ -78,15 +77,15 @@ TEMPLATES = [
 WSGI_APPLICATION = "core.wsgi.application"
 
 
-# # Database
-# # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
 
 # Password validation
@@ -146,5 +145,6 @@ REST_FRAMEWORK = {
 STATIC_URL = "static/"
 
 # global `static/`
-STATICFILES_DIRS = os.path.join(BASE_DIR, "static")
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
