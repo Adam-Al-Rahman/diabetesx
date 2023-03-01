@@ -139,7 +139,6 @@ REST_FRAMEWORK = {
     ],
 }
 
-STATIC_ROOT = "staticfiles"
 STATIC_URL = "static/"
 
 # global `static/`
