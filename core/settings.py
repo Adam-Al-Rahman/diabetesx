@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = config("SECRET_KEY")
 # DEBUG = config("DEBUG", default=False, cast=bool)
 SECRET_KEY = "django-insecure-jri%$0e$hckmd_c5kn=a%!s(l(p+64(k^igs_+4xpusnjz@wnc"
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = [".vercel.app", "localhost"]
@@ -80,12 +80,12 @@ WSGI_APPLICATION = "core.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 
 # Password validation
