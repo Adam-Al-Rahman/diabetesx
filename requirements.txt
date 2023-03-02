@@ -1,9 +1,7 @@
 Django==4.1.7
 djangorestframework==3.14.0
-joblib==1.2.0
 numpy==1.24.2
 python-dateutil==2.8.2
-scikit-learn
 six==1.16.0
-dj-static
+scikit-learn
 # python-decouple
